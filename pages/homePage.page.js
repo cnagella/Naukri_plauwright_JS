@@ -99,18 +99,7 @@ class HomePage {
   // add summary at the end
   logs.push(`\nTotal successfully shared interest: ${successCount}`);
   logs.push(`Remaining not shared: ${remaining}`);
-
-  // ✅ attach everything in one block
-//   await test.step("Final Summary", async () => {
-//     await test.info().attach("All Results", {
-//       body: `Early access text: ${text}\nTotal early access jobs listed: ${totalJobs}\n\n${logs.join("\n")}`,
-//       contentType: "text/plain"
-//     });
-//   });
 }
-
-
-
 }
 
 module.exports = { HomePage };
