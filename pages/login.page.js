@@ -13,7 +13,7 @@ class LoginPage{
         this.loginPopup_loginBtn_loc = page.getByRole('button', { name: 'Login', exact: true });
     }
     async gotoLoginPage(){
-        await this.page.goto("https://www.naukri.com/", { waitUntil: 'load', timeout: 60000 });
+        await this.page.goto("https://www.naukri.com/", { waitUntil: 'load', timeout: 10000});
         // await this.page.waitForLoadState('load');
     }
     async login(username,password){
