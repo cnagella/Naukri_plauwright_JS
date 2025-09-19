@@ -12,7 +12,7 @@ class HomePage {
     this.early_access_roles_loc = page.locator("//div[@class='spc__header']//a[text()='View all']", { timeout: 10000 });
     this.share_interest_loc = page.locator('//div[@class="tlc__tuple"]//button', { timeout: 10000 });
     this.early_Access_header_text_loc = page.locator("//header[@class='lp__header']/p");
-    this.early_access_company_names_loc = page.locator("//span[@class=' comp-name ']");
+    this.early_access_company_names_loc = page.locator("//span[contains(@class,'comp-name')]", { timeout: 10000 });
     this.share_interest_success_msg_loc = page.locator("//span[@class='apply-message typ-14Medium']");
   }
   async gotoearlyAccessRolesTab() {
