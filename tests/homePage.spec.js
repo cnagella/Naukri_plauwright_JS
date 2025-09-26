@@ -6,7 +6,7 @@ const testData = JSON.parse(JSON.stringify(require('../utils/creds.json')));
 
 test('Verify user is navigating to the recommended jobs tab', async ({page})=>{
     const loginPage = new LoginPage(page);
-    await loginPage.gotoLoginPage();
+    await loginPage.gotoLoginPage(testData.url);
     await loginPage.login(testData.username, testData.password);
     const homePage = new HomePage(page);
     await homePage.gotoearlyAccessRolesTab();
